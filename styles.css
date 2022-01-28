@@ -1,0 +1,515 @@
+body {
+  margin: 0%;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  color: #172b4d;
+}
+
+img {
+  max-width: 100%;
+  max-height: 200%;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .menu-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  gap: 50px;
+}
+
+.close-button {
+  background-image: url("Images/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+}
+
+.popup .close-button {
+  position: fixed;
+}
+
+@media screen and (max-width: 991px) {
+  nav .menu-container {
+    position: fixed;
+    width: calc(100% - 30px);
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px 20px 20px;
+    justify-content: left;
+    font-size: 5vw;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+ul {
+  padding: 0%;
+}
+
+li {
+  list-style: none;
+}
+
+.flexnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 20px;
+}
+
+.desktop {
+  display: none;
+}
+
+.landing-page {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0%;
+  padding: 8%;
+  background-image: url("Images/header-illsutration-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+form > * {
+  margin: 10px 0%;
+  padding: 12px;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  max-height: 90px;
+  width: 100%;
+  outline: none;
+}
+
+.landing-page > * {
+  flex: 3;
+}
+
+h1 {
+  align-self: center;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0%;
+}
+
+.enphasis {
+  color: #36b37f;
+}
+
+.network {
+  display: flex;
+  padding: 0%;
+}
+
+.social {
+  flex: 1;
+}
+
+.works {
+  padding: 0% 8% 5%;
+}
+
+@supports (display: grid) {
+  .works {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf0ee;
+  border-radius: 5px;
+  border-color: #d0d9d4;
+  border: 1px solid;
+  margin: 10px;
+}
+
+.screenshot {
+  height: 150px;
+  max-width: 100%;
+  flex-grow: 0;
+}
+
+.info {
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px 16px 30px;
+  flex-grow: 1;
+}
+
+.text {
+  margin: 0%;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin-bottom: 15%;
+  flex-wrap: wrap;
+}
+
+.languages > * {
+  background-color: #ebf0ee;
+  margin: 5px;
+  padding: 3px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  max-height: 16px;
+}
+
+.button {
+  color: white;
+  background-color: #00875a;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@supports (width: fit-content) {
+  .button {
+    width: fit-content;
+  }
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px 0 #36b37f3d;
+}
+
+.button:active {
+  background-color: #008552;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills {
+  padding: 8%;
+}
+
+ul .card {
+  padding: 7px;
+}
+
+.aboutme {
+  background-image: url("Images/background-aboutme-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 25px;
+}
+
+.aboutme p {
+  margin: 30px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tags > * {
+  background-color: white;
+  border-radius: 8px;
+  color: #36b37f;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 5px;
+  font-weight: 600;
+}
+
+@supports (display: grid) {
+  #form {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+  }
+}
+
+#form {
+  padding: 0% 80px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  color: #42526e;
+  padding-top: 10%;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(192 192 192 / 90%);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.popup img {
+  max-height: 430px;
+}
+
+.popup .flexrow {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.popup ul {
+  margin: 0;
+}
+
+.see-live-button {
+  background-image: url("Images/seeproject-icon.png");
+  background-repeat: no-repeat;
+  align-self: baseline;
+  width: calc(50% - 29px);
+  padding: 15px 20px 15px 5px;
+  margin: 2px;
+  background-position: 93% center;
+  position: static;
+  order: 3;
+}
+
+.see-source-button {
+  background-image: url("Images/github-icon.png");
+  background-repeat: no-repeat;
+  align-self: baseline;
+  width: calc(50% - 29px);
+  padding: 15px 20px 15px 5px;
+  margin: 2px;
+  background-position: 93% center;
+  position: static;
+  order: 4;
+}
+
+.error-message {
+  background-color: white;
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .flexnav {
+    justify-content: space-around;
+    padding: 5% 30%;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .welcome {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .popup .close-button {
+    position: static;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .main {
+    background-image: url("Images/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .landing-page {
+    background: transparent;
+    max-height: 42vh;
+    padding: 8% 16%;
+  }
+
+  .network {
+    padding: 0%;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .social {
+    flex: 0;
+  }
+
+  .works .works {
+    padding: 0%;
+  }
+
+  @supports (display: grid) {
+    .works .works {
+      grid-template-columns: 33% 33% 33%;
+    }
+  }
+
+  .aboutme {
+    background-image: url("Images/illustration-about-me-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    padding: 0% 80px;
+  }
+
+  @supports (display: grid) {
+    .skills {
+      display: grid;
+      grid-template-columns: 31% 31% 31%;
+      justify-content: center;
+    }
+  }
+
+  .skills {
+    padding: 4% 8%;
+  }
+
+  #form {
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("Images/illustration-form-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+  }
+
+  @supports (display: grid) {
+    #form {
+      grid-template-columns: 40% 50%;
+    }
+  }
+
+  form .button {
+    align-self: flex-start;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 20px;
+    background-color: rgb(192 192 192 / 90%);
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 650px;
+  }
+
+  .popup img {
+    max-height: 430px;
+  }
+
+  .popup h2 {
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .popup a {
+    position: static;
+  }
+
+  .popup .flexcolumn {
+    max-width: calc(100% - 290px);
+  }
+
+  .popup .flexrow {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .popup .languages {
+    margin: 0;
+    justify-content: left;
+  }
+
+  .see-live-button {
+    background-image: url("Images/seeproject-icon.png");
+    background-repeat: no-repeat;
+    width: 85px;
+    padding: 12px;
+    order: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .see-source-button {
+    background-image: url("Images/github-icon.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    padding: 12px;
+    order: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
